@@ -32,6 +32,9 @@
                       </tbody>
                     </table>
                 </div>
+                <div class="panel-footer">
+                  <button type="button" name="button" class="btn center-block btn-lg btn-success"><i class="fa fa-plus" aria-hidden="true"></i> Crear</button>
+                </div>
             </div>
         </div>
     </div>

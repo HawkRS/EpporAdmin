@@ -17,4 +17,6 @@ Route::get('/', function () {
 
 Route::auth();
 
+Route::resource('TaskCrud','TaskCrudController');
+
 Route::get('/home', 'HomeController@index');
