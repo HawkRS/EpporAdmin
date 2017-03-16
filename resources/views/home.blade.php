@@ -25,8 +25,8 @@
                           <td>18 mar</td>
                           <td>11:00 AM</td>
                           <td>
-                            <button type="button" name="button" class="btn btn-info"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                            <button type="button" name="button" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            <button type="button" name="button" class="btn btn-info"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</button>
+                            <button type="button" name="button" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i> Eliminar</button>
                           </td>
                         </tr>
                       </tbody>
