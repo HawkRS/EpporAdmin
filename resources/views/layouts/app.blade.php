@@ -47,7 +47,15 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">Inicio</a></li>
+                  @if (!Auth::guest())
+                      <li><a href="{{ url('/home') }}">Inicio</a></li>
+                      <li><a href="#">Contabilidad</a></li>
+                      <li><a href="#">Balances</a></li>
+                      <li><a href="#">Inventario</a></li>
+                      <li><a href="#">Cotizaciones</a></li>
+                      <li><a href="#">Nominas</a></li>
+                      <li><a href="#">Control de produccion</a></li>
+                  @endif
                 </ul>
 
                 <!-- Right Side Of Navbar -->
