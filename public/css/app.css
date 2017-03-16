@@ -1,0 +1,16 @@
+@import url(normalize.css);
+@import url(bootstrap.css);
+* {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif; }
+
+a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #3772ff !important;
+  background-color: transparent !important; }
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #3772ff !important;
+  background-color: transparent !important; }
+
+/*# sourceMappingURL=app.css.map */
