@@ -40,7 +40,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    EpporAdmin
+                    <strong>EpporAdmin</strong>
                 </a>
             </div>
 
@@ -48,7 +48,7 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                   @if (!Auth::guest())
-                      <li><a href="{{ url('/home') }}">Inicio</a></li>
+                      <li><a href="{{ route('TaskCrud.index') }}">Inicio</a></li>
                       <li><a href="#">Contabilidad</a></li>
                       <li><a href="#">Balances</a></li>
                       <li><a href="#">Inventario</a></li>
