@@ -20,10 +20,12 @@ class TaskCrudController extends Controller
         return view('TaskCrud.index',compact('items'))
             ->with('i', ($request->input('page', 1) - 1) * 5);
   }
+
   public function create()
   {
-    return view('TaskCrud.create');
+
   }
+
   public function store(Request $request)
   {
     $this->validate($request, [
@@ -38,8 +40,7 @@ class TaskCrudController extends Controller
   }
   public function show($id)
   {
-    $item = Task::find($id);
-        return view('TaskCrud.show',compact('item'));
+
   }
   public function edit($id)
   {
