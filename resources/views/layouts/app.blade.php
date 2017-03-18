@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
 
     <!-- Styles -->
-    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"-->
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <style>
@@ -40,7 +40,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <strong>EpporAdmin</strong>
+                    <strong class="Titulo">EpporAdmin</strong>
                 </a>
             </div>
 
@@ -49,11 +49,10 @@
                 <ul class="nav navbar-nav">
                   @if (!Auth::guest())
                       <li><a href="{{ route('TaskCrud.index') }}">Inicio</a></li>
+                      <li><a href="#">Bases</a></li>
+                      <li><a href="#">Cotizar</a></li>
                       <li><a href="#">Contabilidad</a></li>
-                      <li><a href="#">Balances</a></li>
-                      <li><a href="#">Inventario</a></li>
-                      <li><a href="#">Cotizaciones</a></li>
-                      <li><a href="#">Nominas</a></li>
+                      <li><a href="#">Nomina</a></li>
                       <li><a href="#">Control de produccion</a></li>
                   @endif
                 </ul>

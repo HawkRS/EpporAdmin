@@ -38,12 +38,22 @@
   margin-right: 45px; }
 
 a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #3772ff !important;
-  background-color: transparent !important; }
+  color: #9aa0a6 !important;
+  background-color: transparent !important;
+  transition: 400ms;
+  -o-transition: 400ms;
+  -ms-transition: 400ms;
+  -moz-transition: 400ms;
+  -webkit-transition: 400ms; }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #3772ff !important;
-  background-color: transparent !important; }
+  color: #9aa0a6 !important;
+  background-color: transparent !important;
+  transition: 400ms;
+  -o-transition: 400ms;
+  -ms-transition: 400ms;
+  -moz-transition: 400ms;
+  -webkit-transition: 400ms; }
 
 .act-btn {
   display: -ms-flexbox;
@@ -60,5 +70,8 @@ a:hover, .navbar-default .navbar-nav > li > a:focus {
 .main-section {
   margin: auto;
   width: 50%; }
+
+.Titulo {
+  font-size: 1.5em !important; }
 
 /*# sourceMappingURL=app.css.map */
