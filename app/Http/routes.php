@@ -18,5 +18,8 @@ Route::get('/', function () {
 Route::auth();
 
 Route::resource('TaskCrud','TaskCrudController');
+Route::resource('ClientesCrud','ClientesCrudController');
+Route::resource('ProveedoresCrud','ProveedoresCrudController');
+Route::resource('EmpleadosCrud','EmpleadosCrudController');
 
 Route::get('/home', 'HomeController@index');

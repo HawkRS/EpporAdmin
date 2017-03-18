@@ -16,7 +16,7 @@ class TaskCrudController extends Controller
 
   public function index(Request $request)
   {
-    $items = Task::orderBy('id','DESC')->paginate(10);
+    $items = Task::orderBy('id','DESC')->paginate(5);
         return view('TaskCrud.index',compact('items'))
             ->with('i', ($request->input('page', 1) - 1) * 5);
   }
