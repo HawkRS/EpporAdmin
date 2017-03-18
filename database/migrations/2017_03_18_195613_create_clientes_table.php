@@ -16,13 +16,14 @@ class CreateClientesTable extends Migration
           $table->increments('id');
           $table->string('nombre');
           $table->string('direccion');
+          $table->string('colonia');
           $table->string('ciudad');
           $table->string('estado');
           $table->string('telefono');
           $table->string('correo');
           $table->string('codigop');
           $table->string('contacto');
-          $table->string('razon social');
+          $table->string('razon_social');
           $table->string('rfc');
           $table->timestamps();
       });
