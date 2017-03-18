@@ -12,7 +12,22 @@ class CreateEmpleadosTable extends Migration
      */
     public function up()
     {
-        //
+      Schema::create('empleados', function (Blueprint $table) {
+          $table->increments('id');
+          $table->string('nombres');
+          $table->string('apellidos');
+          $table->date('nacimiento');
+          $table->string('telefono');
+          $table->string('direccion');
+          $table->string('colonia');
+          $table->string('codigop');
+          $table->string('emergencia')->nullable();
+          $table->string('emetelefono')->nullable();
+          $table->boolean('estado')->default('1');
+          $table->date('entrada');
+          $table->date('salida')->default(NULL);
+          $table->timestamps();
+      });
     }
 
     /**
@@ -22,6 +37,6 @@ class CreateEmpleadosTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('empleados');
     }
 }
