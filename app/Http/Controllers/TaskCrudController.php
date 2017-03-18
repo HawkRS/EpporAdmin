@@ -8,6 +8,12 @@ use App\Http\Requests;
 
 class TaskCrudController extends Controller
 {
+  public function __construct()
+  {
+      $this->middleware('auth');
+  }
+
+
   public function index(Request $request)
   {
     $items = Task::orderBy('id','DESC')->paginate(10);
