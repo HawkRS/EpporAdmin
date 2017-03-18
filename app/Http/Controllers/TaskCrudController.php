@@ -58,7 +58,7 @@ class TaskCrudController extends Controller
         return redirect()->route('TaskCrud.index')
                         ->with('success','Tarea editada con exito');
   }
-  public function delete($id)
+  public function destroy($id)
   {
     Task::find($id)->delete();
         return redirect()->route('TaskCrud.index')
