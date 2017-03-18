@@ -5,6 +5,26 @@
   text-decoration: none;
   font-family: 'Montserrat', sans-serif; }
 
+.mh-5 {
+  margin-left: 5px;
+  margin-right: 5px; }
+
+.mh-10 {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.mh-15 {
+  margin-left: 15px;
+  margin-right: 15px; }
+
+.mh-20 {
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.mh-25 {
+  margin-left: 25px;
+  margin-right: 25px; }
+
 a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #3772ff !important;
   background-color: transparent !important; }
@@ -12,5 +32,21 @@ a:hover, .navbar-default .navbar-nav > li > a:focus {
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #3772ff !important;
   background-color: transparent !important; }
+
+.act-btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row;
+  flex-flow: row; }
+  .act-btn a {
+    -ms-flex: 1;
+    flex: 1; }
+
+.tbtn {
+  width: 60%; }
+
+.main-section {
+  margin: auto;
+  width: 60%; }
 
 /*# sourceMappingURL=app.css.map */
