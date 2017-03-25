@@ -34,14 +34,9 @@
               <th>No</th>
               <th>Nombre</th>
               <th>Razon Social</th>
-              <th>RFC</th>
               <th>Telefono</th>
               <th>Correo</th>
-              <th>Contacto</th>
-              <th>Direccion</th>
-              <th>Colonia</th>
-              <th>Estado</th>
-              <th>Codigo Postal</th>
+              <th>Ciudad</th>
               <th>Acciones</th>
           </tr>
       @foreach ($items as $key => $item)
@@ -49,14 +44,9 @@
           <td>{{ ++$i }}</td>
           <td>{{ $item->nombres }}</td>
           <td>{{ $item->razon_social }}</td>
-          <td>{{ $item->rfc }}</td>
           <td>{{ $item->telefono }}</td>
           <td>{{ $item->correo }}</td>
-          <td>{{ $item->contacto }}</td>
-          <td>{{ $item->direccion }}</td>
-          <td>{{ $item->colonia }}</td>
-          <td>{{ $item->estado }}</td>
-          <td>{{ $item->codigop }}</td>
+          <td>{{ $item->ciudad }}</td>
           <td>
               <a class="btn btn-info" href="{{ route('ClientesCrud.edit',$item->id) }}">Edit</a>
               {!! Form::open(['method' => 'DELETE','route' => ['ClientesCrud.destroy', $item->id],'style'=>'display:inline']) !!}
