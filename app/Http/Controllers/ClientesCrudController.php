@@ -8,7 +8,11 @@ use App\Http\Requests;
 
 class ClientesCrudController extends Controller
 {
-    $this->middleware('auth');
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
 
     public function index(Request $request)
     {
@@ -47,6 +51,13 @@ class ClientesCrudController extends Controller
     {
 
     }
+
+    public function filter(Request $request)
+    {
+      $clientes = Clientes::where('nombres', '=',$request['filtrar'])->orderBy('id','DESC')->paginate(10);
+      return view('CRUD.ClientesCrud.index',compact('clientes'));
+    }
+
 
     public function update(Request $request, $id)
     {

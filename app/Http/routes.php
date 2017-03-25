@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::auth();
 
 Route::resource('TaskCrud','TaskCrudController');
+Route::get('ClientesCrud/filter',['as' => 'filter', 'uses' => 'ClientesCrudController@filter']);
 Route::resource('ClientesCrud','ClientesCrudController');
 Route::resource('ProveedoresCrud','ProveedoresCrudController');
 Route::resource('EmpleadosCrud','EmpleadosCrudController');

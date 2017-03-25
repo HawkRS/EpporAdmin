@@ -7,12 +7,17 @@
 
     <div class="panel-heading">
       <div class="pull-left">
-          <h2>Tareas</h2>
+          <h2>Clientes</h2>
       </div>
       <div class="clearfix"></div>
     </div>
     <div class="panel-actions">
-
+      {!! Form::open(array('route' => 'filter','method'=>'GET', 'class' => 'form')) !!}
+      {!! Form::text('filtrar', null, array('placeholder' => 'Ingresa el nombre a buscar','class' => 'form-control')) !!}
+      {!! Form::submit('Buscar', ['class' => 'btn btn-xs btn-info']) !!}
+      {!! Form::close() !!}
+      <a class="btn btn-success" href="{{ route('ClientesCrud.create') }}">Crear</a>
+      <a class="btn btn-primary" href="{{ url('/') }}">Volver</a>
     </div>
     <div class="panel-body">
 

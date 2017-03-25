@@ -49,7 +49,14 @@
                 <ul class="nav navbar-nav">
                   @if (!Auth::guest())
                       <li><a href="{{ route('TaskCrud.index') }}">Inicio</a></li>
-                      <li><a href="#">Bases</a></li>
+                      <li class="dropdown">{{-- DROPDOWN DE BASES --}}
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bases <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="{{ route('ClientesCrud.index') }}">Clientes</a></li>
+                        <li><a href="#">Proveedores</a></li>
+                        <li><a href="#">Empleados</a></li>
+                      </ul>
+                    </li>
                       <li><a href="#">Cotizar</a></li>
                       <li><a href="#">Contabilidad</a></li>
                       <li><a href="#">Nomina</a></li>
