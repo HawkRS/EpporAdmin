@@ -12,12 +12,15 @@
       <div class="clearfix"></div>
     </div>
     <div class="panel-actions">
-      {!! Form::open(array('route' => 'filter','method'=>'GET', 'class' => 'form')) !!}
-      {!! Form::text('filtrar', null, array('placeholder' => 'Ingresa el nombre a buscar','class' => 'form-control')) !!}
-      {!! Form::submit('Buscar', ['class' => 'btn btn-xs btn-info']) !!}
+      {!! Form::open(array('route' => 'filter','method'=>'GET', 'class' => 'search-form')) !!}
+        {!! Form::text('filtrar', null, array('placeholder' => 'Ingresa el nombre a buscar','class' => ' search-text')) !!}
+        <div class="mh-5"></div>
+        {!! Form::submit('Buscar', ['class' => 'btn btn-info search-btn']) !!}
+      <div class="mh-10"></div>{{-- MARGEN ENTRE BOTONES --}}
       {!! Form::close() !!}
-      <a class="btn btn-success" href="{{ route('ClientesCrud.create') }}">Crear</a>
-      <a class="btn btn-primary" href="{{ url('/') }}">Volver</a>
+      <a class="btn btn-block btn-success" href="{{ route('ClientesCrud.create') }}">Crear</a>
+      <div class="mh-10"></div>{{-- MARGEN ENTRE BOTONES --}}
+      <a class="btn btn-block btn-primary" href="{{ url('/') }}">Volver</a>
     </div>
     <div class="panel-body">
 

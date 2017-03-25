@@ -74,4 +74,22 @@ a:hover, .navbar-default .navbar-nav > li > a:focus {
 .Titulo {
   font-size: 1.5em !important; }
 
+/*** CLIENTES ***/
+.panel-actions {
+  padding: 5px 15px; }
+
+.panel-actions, .search-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row;
+  flex-flow: row; }
+
+.search-text {
+  -ms-flex: 3;
+  flex: 3; }
+
+.search-btn {
+  -ms-flex: 1;
+  flex: 1; }
+
 /*# sourceMappingURL=app.css.map */

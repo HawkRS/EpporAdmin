@@ -56,3 +56,13 @@ a:hover, .navbar-default .navbar-nav > li > a:focus {
   width: 50%;
 }
 .Titulo{font-size:1.5em !important;}
+/*** CLIENTES ***/
+.panel-actions{
+  padding: 5px 15px;
+}
+.panel-actions, .search-form{
+  display: flex;
+  flex-flow: row;
+}
+.search-text{flex: 3;}
+.search-btn{flex: 1;}
