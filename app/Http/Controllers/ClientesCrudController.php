@@ -80,10 +80,9 @@ class ClientesCrudController extends Controller
               'razon_social' => 'required',
               'rfc' => 'required'
           ]);
-
-          Clientes::create($request->all());
+          Clientes::find($id)->update($request->all());
           return redirect()->route('ClientesCrud.index')
-                          ->with('success','Cliente creada con exito');
+                          ->with('success','Cliente editado con exito');
     }
 
     public function destroy($id)
@@ -91,5 +90,6 @@ class ClientesCrudController extends Controller
       Clientes::find($id)->delete();
           return redirect()->route('ClientesCrud.index')
                           ->with('success','Cliente eliminado con exito');
+      
     }
 }

@@ -54,6 +54,7 @@ class ProveedoresCrudController extends Controller
     public function filter(Request $request)
     {
       $proveedores = Proveedores::where('nombres', '=',$request['filtrar'])->orderBy('id','DESC')->paginate(10);
+      echo $proveedores;
       return view('CRUD.ProveedoresCrud.index',compact('proveedores'));
     }
 
@@ -79,15 +80,15 @@ class ProveedoresCrudController extends Controller
               'rfc' => 'required'
           ]);
 
-          Proveedores::create($request->all());
+          Proveedores::find($id)->update($request->all());
           return redirect()->route('ProveedoresCrud.index')
-                          ->with('success','Proveedor creada con exito');
+                          ->with('success','Proveedor editado con exito');
     }
 
     public function destroy($id)
     {
       Proveedores::find($id)->delete();
-          return redirect()->route('CRUD.ProveedoresCrud.index')
+          return redirect()->route('ProveedoresCrud.index')
                           ->with('success','Proveedor eliminado con exito');
     }
 }

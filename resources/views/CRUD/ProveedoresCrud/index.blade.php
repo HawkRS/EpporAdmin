@@ -12,7 +12,7 @@
       <div class="clearfix"></div>
     </div>
     <div class="panel-actions">
-      {!! Form::open(array('route' => 'filter','method'=>'GET', 'class' => 'search-form')) !!}
+      {!! Form::open(array('route' => 'FilterProveedor','method'=>'GET', 'class' => 'search-form')) !!}
         {!! Form::text('filtrar', null, array('placeholder' => 'Ingresa el nombre a buscar','class' => ' search-text')) !!}
         <div class="mh-5"></div>
         {!! Form::submit('Buscar', ['class' => 'btn btn-info search-btn']) !!}
