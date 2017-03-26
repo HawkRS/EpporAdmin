@@ -23,7 +23,7 @@ class ClientesCrudController extends Controller
 
     public function create()
     {
-
+      return view ('CRUD.ClientesCrud.create');
     }
 
     public function store(Request $request)
@@ -43,13 +43,13 @@ class ClientesCrudController extends Controller
           ]);
 
           Clientes::create($request->all());
-          return redirect()->route('CRUD.ClientesCrud.index')
+          return redirect()->route('ClientesCrud.index')
                           ->with('success','Cliente creada con exito');
     }
 
     public function show($id)
     {
-
+      
     }
 
     public function filter(Request $request)
@@ -76,14 +76,14 @@ class ClientesCrudController extends Controller
           ]);
 
           Clientes::create($request->all());
-          return redirect()->route('CRUD.ClientesCrud.index')
+          return redirect()->route('ClientesCrud.index')
                           ->with('success','Cliente creada con exito');
     }
 
     public function destroy($id)
     {
       Clientes::find($id)->delete();
-          return redirect()->route('CRUD.ClientesCrud.index')
+          return redirect()->route('ClientesCrud.index')
                           ->with('success','Cliente eliminado con exito');
     }
 }
