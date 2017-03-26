@@ -11,6 +11,6 @@ class Empleados extends Model
   protected $fillable = [
       'nombres', 'apellidos', 'nacimiento', 'telefono', 'direccion', 'colonia'
       , 'codigop', 'emergencia', 'emetelefono', 'estado', 'entrada', 'salida'
-  ];;
+  ];
 
 }

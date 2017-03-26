@@ -54,7 +54,7 @@
                       <ul class="dropdown-menu">
                         <li><a href="{{ route('ClientesCrud.index') }}">Clientes</a></li>
                         <li><a href="{{ route('ProveedoresCrud.index')}}">Proveedores</a></li>
-                        <li><a href="#">Empleados</a></li>
+                        <li><a href="{{ route('EmpleadosCrud.index')}}">Empleados</a></li>
                       </ul>
                     </li>
                       <li><a href="#">Cotizar</a></li>
