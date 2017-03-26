@@ -49,8 +49,8 @@ class ClientesCrudController extends Controller
 
     public function show($id)
     {
-      $item = Item::find($id);
-      return view('ClientesCrud.show',compact('item'));
+      $item = Clientes::find($id);
+      return view('CRUD.ClientesCrud.show',compact('item'));
     }
 
     public function filter(Request $request)

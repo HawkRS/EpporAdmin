@@ -53,7 +53,7 @@
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bases <span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a href="{{ route('ClientesCrud.index') }}">Clientes</a></li>
-                        <li><a href="#">Proveedores</a></li>
+                        <li><a href="{{ route('ProveedoresCrud.index')}}">Proveedores</a></li>
                         <li><a href="#">Empleados</a></li>
                       </ul>
                     </li>

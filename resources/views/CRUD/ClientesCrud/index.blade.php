@@ -48,9 +48,10 @@
           <td>{{ $item->correo }}</td>
           <td>{{ $item->ciudad }}</td>
           <td>
-              <a class="btn btn-info" href="{{ route('ClientesCrud.edit',$item->id) }}">Edit</a>
+              <a class="btn btn-info"    href="{{ route('ClientesCrud.show',$item->id) }}"><i class="fa fa-info-circle fa-1-5x" aria-hidden="true"></i></a>
+              <a class="btn btn-warning" href="{{ route('ClientesCrud.edit',$item->id) }}"><i class="fa fa-pencil-square-o fa-1-5x" aria-hidden="true"></i></a>
               {!! Form::open(['method' => 'DELETE','route' => ['ClientesCrud.destroy', $item->id],'style'=>'display:inline']) !!}
-              {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
+              <button type="submit" name="button" class= "btn btn-danger"><i class="fa fa-trash fa-1-5x" aria-hidden="true"></i></button>
               {!! Form::close() !!}
           </td>
       </tr>
