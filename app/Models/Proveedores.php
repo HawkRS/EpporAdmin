@@ -11,6 +11,6 @@ class Proveedores extends Model
   protected $fillable = [
       'nombres', 'direccion', 'colonia', 'ciudad', 'estado', 'telefono'
       , 'correo', 'codigop', 'contacto', 'razon_social', 'rfc'
-  ];;
+  ];
 
 }
