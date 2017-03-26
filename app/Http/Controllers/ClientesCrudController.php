@@ -49,7 +49,8 @@ class ClientesCrudController extends Controller
 
     public function show($id)
     {
-      
+      $item = Item::find($id);
+      return view('ClientesCrud.show',compact('item'));
     }
 
     public function filter(Request $request)
@@ -58,6 +59,11 @@ class ClientesCrudController extends Controller
       return view('CRUD.ClientesCrud.index',compact('clientes'));
     }
 
+    public function edit($id)
+    {
+        $item = Clientes::find($id);
+        return view('CRUD.ClientesCrud.edit',compact('item'));
+    }
 
     public function update(Request $request, $id)
     {
