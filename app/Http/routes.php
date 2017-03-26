@@ -18,9 +18,14 @@ Route::get('/', function () {
 Route::auth();
 
 Route::resource('TaskCrud','TaskCrudController');
-Route::get('ClientesCrud/filter',['as' => 'filter', 'uses' => 'ClientesCrudController@filter']);
+// CLIENTES
 Route::resource('ClientesCrud','ClientesCrudController');
+Route::get('ClientesCrud/filter',['as' => 'filter', 'uses' => 'ClientesCrudController@filter']);
+// PROVEEDORES
 Route::resource('ProveedoresCrud','ProveedoresCrudController');
+Route::get('ProveedoresCrud/filter',['as' => 'filter', 'uses' => 'ProveedoresCrudController@filter']);
+// EMPLEADOS
 Route::resource('EmpleadosCrud','EmpleadosCrudController');
+Route::get('EmpleadosCrud/filter',['as' => 'filter', 'uses' => 'EmpleadosCrudController@filter']);
 
 Route::get('/home', 'HomeController@index');
