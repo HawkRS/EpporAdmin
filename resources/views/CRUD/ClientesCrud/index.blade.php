@@ -15,7 +15,7 @@
       {!! Form::open(array('route' => 'FilterCliente','method'=>'GET', 'class' => 'search-form')) !!}
         {!! Form::text('filtrar', null, array('placeholder' => 'Ingresa el nombre a buscar','class' => ' search-text')) !!}
         <div class="mh-5"></div>
-        {!! Form::submit('Buscar', ['class' => 'btn btn-info search-btn']) !!}
+        {!! Form::submit('Buscar', ['class' => 'btn btn-secundary search-btn']) !!}
       <div class="mh-10"></div>{{-- MARGEN ENTRE BOTONES --}}
       {!! Form::close() !!}
       <a class="btn btn-block btn-success" href="{{ route('ClientesCrud.create') }}">Crear</a>

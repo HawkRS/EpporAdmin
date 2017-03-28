@@ -3174,6 +3174,51 @@ fieldset[disabled] .btn-primary.focus {
   color: #337ab7;
   background-color: #ffffff;
 }
+.btn-secundary {
+  color: #ffffff;
+  background-color: #693887;
+  border-color: #130269;
+}
+
+.btn-secundary:hover,
+.btn-secundary:focus,
+.btn-secundary:active,
+.btn-secundary.active,
+.open .dropdown-toggle.btn-secundary {
+  color: #ffffff;
+  background-color: #49247A;
+  border-color: #130269;
+}
+
+.btn-secundary:active,
+.btn-secundary.active,
+.open .dropdown-toggle.btn-secundary {
+  background-image: none;
+}
+
+.btn-secundary.disabled,
+.btn-secundary[disabled],
+fieldset[disabled] .btn-secundary,
+.btn-secundary.disabled:hover,
+.btn-secundary[disabled]:hover,
+fieldset[disabled] .btn-secundary:hover,
+.btn-secundary.disabled:focus,
+.btn-secundary[disabled]:focus,
+fieldset[disabled] .btn-secundary:focus,
+.btn-secundary.disabled:active,
+.btn-secundary[disabled]:active,
+fieldset[disabled] .btn-secundary:active,
+.btn-secundary.disabled.active,
+.btn-secundary[disabled].active,
+fieldset[disabled] .btn-secundary.active {
+  background-color: #693887;
+  border-color: #130269;
+}
+
+.btn-secundary .badge {
+  color: #693887;
+  background-color: #ffffff;
+}
 .btn-success {
   color: #ffffff;
   background-color: #5cb85c;
@@ -3228,8 +3273,8 @@ fieldset[disabled] .btn-success.focus {
   border-color: #4cae4c;
 }
 .btn-success .badge {
-  color: #5cb85c;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #31b0d5;
 }
 .btn-info {
   color: #ffffff;
