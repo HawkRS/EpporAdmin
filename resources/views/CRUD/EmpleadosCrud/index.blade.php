@@ -18,7 +18,7 @@
         {!! Form::submit('Buscar', ['class' => 'btn btn-info search-btn']) !!}
       <div class="mh-10"></div>{{-- MARGEN ENTRE BOTONES --}}
       {!! Form::close() !!}
-      <a class="btn btn-block btn-success" href="{{ route('ClientesCrud.create') }}">Crear</a>
+      <a class="btn btn-block btn-success" href="{{ route('EmpleadosCrud.create') }}">Crear</a>
       <div class="mh-10"></div>{{-- MARGEN ENTRE BOTONES --}}
       <a class="btn btn-block btn-primary" href="{{ url('/') }}">Volver</a>
     </div>
@@ -50,9 +50,9 @@
           <td>{{ $item->entrada }}</td>
           <td>{{ $item->salida }}</td>
           <td>
-              <a class="btn btn-info"    href="{{ route('ClientesCrud.show',$item->id) }}"><i class="fa fa-info-circle fa-1-5x" aria-hidden="true"></i></a>
-              <a class="btn btn-warning" href="{{ route('ClientesCrud.edit',$item->id) }}"><i class="fa fa-pencil-square-o fa-1-5x" aria-hidden="true"></i></a>
-              {!! Form::open(['method' => 'DELETE','route' => ['ClientesCrud.destroy', $item->id],'style'=>'display:inline']) !!}
+              <a class="btn btn-info"    href="{{ route('EmpleadosCrud.show',$item->id) }}"><i class="fa fa-info-circle fa-1-5x" aria-hidden="true"></i></a>
+              <a class="btn btn-warning" href="{{ route('EmpleadosCrud.edit',$item->id) }}"><i class="fa fa-pencil-square-o fa-1-5x" aria-hidden="true"></i></a>
+              {!! Form::open(['method' => 'DELETE','route' => ['EmpleadosCrud.destroy', $item->id],'style'=>'display:inline']) !!}
               <button type="submit" name="button" class= "btn btn-danger"><i class="fa fa-trash fa-1-5x" aria-hidden="true"></i></button>
               {!! Form::close() !!}
           </td>
