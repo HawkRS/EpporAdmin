@@ -55,6 +55,8 @@
                         <li><a href="{{ route('ClientesCrud.index') }}">Clientes</a></li>
                         <li><a href="{{ route('ProveedoresCrud.index')}}">Proveedores</a></li>
                         <li><a href="{{ route('EmpleadosCrud.index')}}">Empleados</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Materiales</a></li>
                       </ul>
                     </li>
                       <li><a href="#">Cotizar</a></li>
@@ -86,7 +88,29 @@
         </div>
     </nav>
 
-    @yield('content')
+    <main class="center-section">
+      <aside class="side-section">
+        <ul>
+          <li>Fecha</li>
+          <li>Periodo contable</li>
+          <li>Balance mensual</li>
+          <li>Balance bimestral</li>
+          <li>Balance anual</li>
+
+          <li>Ventas</li>
+
+          <li>Produccion</li>
+
+          <li>Correos</li>
+        </ul>
+
+      </aside>
+      <section class="middle-section">
+        @yield('content')
+      </section>
+
+    </main>
+
 
     <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>

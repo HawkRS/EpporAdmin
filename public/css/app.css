@@ -37,60 +37,71 @@
   margin-left: 45px;
   margin-right: 45px; }
 
-/* .btn-primary {
+html {
+  height: 100%; }
+
+body {
+  position: relative;
+  min-height: 100%; }
+
+.side-section {
+  height: 100%;
+  position: absolute; }
+
+/* .btn-secundary {
   color: #ffffff;
   background-color: #337ab7;
   border-color: #2e6da4;
 }
-.btn-primary:focus,
-.btn-primary.focus {
+.btn-secundary:focus,
+.btn-secundary.focus {
   color: #ffffff;
   background-color: #286090;
   border-color: #122b40;
 }
-.btn-primary:hover {
+.btn-secundary:hover {
   color: #ffffff;
   background-color: #286090;
   border-color: #204d74;
 }
-.btn-primary:active,
-.btn-primary.active,
+.btn-secundary:active,
+.btn-secundary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
   background-color: #286090;
   border-color: #204d74;
 }
-.btn-primary:active:hover,
-.btn-primary.active:hover,
-.open > .dropdown-toggle.btn-primary:hover,
-.btn-primary:active:focus,
-.btn-primary.active:focus,
-.open > .dropdown-toggle.btn-primary:focus,
-.btn-primary:active.focus,
-.btn-primary.active.focus,
-.open > .dropdown-toggle.btn-primary.focus {
+.btn-secundary:active:hover,
+.btn-secundary.active:hover,
+.open > .dropdown-toggle.btn-secundary:hover,
+.btn-secundary:active:focus,
+.btn-secundary.active:focus,
+.open > .dropdown-toggle.btn-secundary:focus,
+.btn-secundary:active.focus,
+.btn-secundary.active.focus,
+.open > .dropdown-toggle.btn-secundary.focus {
   color: #ffffff;
   background-color: #204d74;
   border-color: #122b40;
 }
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
+.btn-secundary:active,
+.btn-secundary.active,
+.open > .dropdown-toggle.btn-secundary {
   background-image: none;
 }
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled.focus,
-.btn-primary[disabled].focus,
-fieldset[disabled] .btn-primary.focus {
+.btn-secundary.disabled:hover,
+.btn-secundary[disabled]:hover,
+fieldset[disabled] .btn-secundary:hover,
+.btn-secundary.disabled:focus,
+.btn-secundary[disabled]:focus,
+fieldset[disabled] .btn-secundary:focus,
+.btn-secundary.disabled.focus,
+.btn-secundary[disabled].focus,
+fieldset[disabled] .btn-secundary.focus {
   background-color: #337ab7;
   border-color: #2e6da4;
 }
-.btn-primary .badge {
+.btn-secundary .badge {
   color: #337ab7;
   background-color: #ffffff;
 } */
@@ -154,5 +165,21 @@ a:hover, .navbar-default .navbar-nav > li > a:focus {
 
 .title {
   color: #1c1c1c; }
+
+.center-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row;
+  flex-flow: row; }
+
+.middle-section {
+  -ms-flex: 4 !important;
+  flex: 4 !important;
+  margin-top: 20px; }
+
+.side-section {
+  -ms-flex: 1 !important;
+  flex: 1 !important;
+  background-color: #042542; }
 
 /*# sourceMappingURL=app.css.map */

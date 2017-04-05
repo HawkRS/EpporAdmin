@@ -30,63 +30,18 @@ $texto2:                 snow;
   -moz-transition: $transition;
   -webkit-transition: $transition;
 }
-/* .btn-secundary {
-  color: #ffffff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+html{
+    height:100%;
 }
-.btn-secundary:focus,
-.btn-secundary.focus {
-  color: #ffffff;
-  background-color: #286090;
-  border-color: #122b40;
+body{
+    position: relative;
+    min-height: 100%;
 }
-.btn-secundary:hover {
-  color: #ffffff;
-  background-color: #286090;
-  border-color: #204d74;
+.side-section{
+   height:100%;
+   position: absolute;
 }
-.btn-secundary:active,
-.btn-secundary.active,
-.open > .dropdown-toggle.btn-primary {
-  color: #ffffff;
-  background-color: #286090;
-  border-color: #204d74;
-}
-.btn-secundary:active:hover,
-.btn-secundary.active:hover,
-.open > .dropdown-toggle.btn-secundary:hover,
-.btn-secundary:active:focus,
-.btn-secundary.active:focus,
-.open > .dropdown-toggle.btn-secundary:focus,
-.btn-secundary:active.focus,
-.btn-secundary.active.focus,
-.open > .dropdown-toggle.btn-secundary.focus {
-  color: #ffffff;
-  background-color: #204d74;
-  border-color: #122b40;
-}
-.btn-secundary:active,
-.btn-secundary.active,
-.open > .dropdown-toggle.btn-secundary {
-  background-image: none;
-}
-.btn-secundary.disabled:hover,
-.btn-secundary[disabled]:hover,
-fieldset[disabled] .btn-secundary:hover,
-.btn-secundary.disabled:focus,
-.btn-secundary[disabled]:focus,
-fieldset[disabled] .btn-secundary:focus,
-.btn-secundary.disabled.focus,
-.btn-secundary[disabled].focus,
-fieldset[disabled] .btn-secundary.focus {
-  background-color: #337ab7;
-  border-color: #2e6da4;
-}
-.btn-secundary .badge {
-  color: #337ab7;
-  background-color: #ffffff;
-} */
+
 .fa-1-5x{
   font-size: 15px;
 }
@@ -127,4 +82,15 @@ a:hover, .navbar-default .navbar-nav > li > a:focus {
 .search-btn{flex: 1;}
 .title{
   color: $texto1;
+}
+
+.center-section{
+  display: flex;
+  flex-flow: row;
+}
+.middle-section{
+  margin-top: 20px;
+}
+.side-section{
+  background-color: darken($primary-color, 20%);
 }
